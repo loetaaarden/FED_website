@@ -57,6 +57,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  Mijn website:
+  - de navigatie spreekt de voiceover uit als "bottle, image, tap, image, ect...." dus elke keer blijft hij de "image" herhalen aangezien de kleine dropdown hebben ze als image neergezet waardoor dat wordt uitgesproken.
+  - ook wordt er bij de eerste grootte foto allemaal dingen opgenoemd die je niet kan zien en dus niet te klikken zijn. later te zien waren deze bij de dropdown van de nnaviagtie
 
 </details>
 
