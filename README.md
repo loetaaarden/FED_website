@@ -16,7 +16,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Loeta Aarden (vervangen door jouw naam)
+  Loeta Aarden 
 
   #### Je startniveau:
   blauw met een beetje rood (kies uit zwart, rood óf blauw)
