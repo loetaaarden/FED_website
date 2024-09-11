@@ -59,6 +59,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen:
   Mijn website:
   - de navigatie spreekt de voiceover uit als "bottle, image, tap, image, ect...." dus elke keer blijft hij de "image" herhalen aangezien de kleine dropdown hebben ze als image neergezet waardoor dat wordt uitgesproken.
+  - ook komen er dingen omhoog die niet te zien zijnn om de pagina maar wel allemaal gezegd worden omdat ze in het menu zitten als je erop klikt. Hierdoor wordt het wel heel vaag en is het niet te volgen.
 
 </details>
 
