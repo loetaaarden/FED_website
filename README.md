@@ -61,6 +61,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - de navigatie spreekt de voiceover uit als "bottle, image, tap, image, ect...." dus elke keer blijft hij de "image" herhalen aangezien de kleine dropdown hebben ze als image neergezet waardoor dat wordt uitgesproken.
   - ook komen er dingen omhoog die niet te zien zijnn om de pagina maar wel allemaal gezegd worden omdat ze in het menu zitten als je erop klikt. Hierdoor wordt het wel heel vaag en is het niet te volgen.
 
+  andere websites:
+  - bij andere websites die ik heb gechecked heb ik gemerkt dat er vaak bijvoorbeeld een foto met een alt tekst staat en dan nog een keer de titel wordt uitgesproken.
+  - ook is bij veel websites die volgorde hoe het wordt verteld totaal niet duidelijk.
+
 </details>
 
 
@@ -71,7 +75,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownschets.PNG" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
@@ -101,7 +105,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | of een list in | ...                | ...          | ...              |
+  de footer voor de 
+  linkjes mag/hanig is           
 
 
   ### Verslag van meeting
