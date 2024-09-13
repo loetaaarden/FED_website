@@ -105,9 +105,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | of een list in | ...                | ...          | ...              |
-  de footer voor de 
-  linkjes mag/hanig is           
+  | of een list in | moet ik heel de nav| kan ik het   | is dit een h2?   | dit is op de normale site een foto? 
+  de footer voor de| uitwerken (met dropdown)| vertalen |    
+  linkjes mag/hanig is |                |van de site een als |
+                                        | een van die special |
+                                        |dingen gebruiken voor|
+                                        |surface plane          
 
 
   ### Verslag van meeting
