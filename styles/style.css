@@ -7,5 +7,61 @@
 
 :root {
 	--main-color: #0067e5;
-	--text-color: #f6ecc8;
+	--accent-color: #F6ECC8;
+}
+
+@font-face {
+  font-family: 'DopperRegular';
+  src: url('../fonts/Dopper-Regular.5125e5cb.woff2');
+  font-weight: normal;
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'GilroyMedium';
+  src: url('../fonts/Gilroy-Medium.605c261f.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GilroyBold';
+  src: url('../fonts/Gilroy-Bold.af2227af.woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+h1 {
+  font-family: DopperRegular;
+  color: var(--accent-color);
+}
+
+h2 {
+  font-family: GilroyMedium;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* nav */
+nav a img {
+  max-width: 18vw;
+}
+
+nav {
+  display: flex;
+  gap: 2vw; 
+  position: absolute;
+}
+
+nav a {
+  color: var(--accent-color);
+  font-family: GilroyMedium;
+  
+}
+
+
+main section:nth-of-type(1) img{
+  width: 100vw;
 }
