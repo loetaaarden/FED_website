@@ -8,13 +8,16 @@
 :root {
 	--main-color: #0067e5;
 	--accent-color: #F6ECC8;
+  --third-color: #000E2E;
+  --basic-color1: #FCFAF2;
 }
 
 @font-face {
   font-family: 'DopperRegular';
   src: url('../fonts/Dopper-Regular.5125e5cb.woff2');
   font-weight: normal;
-  font-style: normal; 
+  font-style: normal;
+  font: inherit; 
 }
 
 @font-face {
@@ -22,21 +25,22 @@
   src: url('../fonts/Gilroy-Medium.605c261f.woff2');
   font-weight: normal;
   font-style: normal;
+  font: inherit;
 }
 
 @font-face {
   font-family: 'GilroyBold';
   src: url('../fonts/Gilroy-Bold.af2227af.woff2');
-  font-weight: bold;
+  font-weight: 900;
   font-style: normal;
-}
-
-h1 {
-  font-family: DopperRegular;
-  color: var(--accent-color);
+  font: inherit;
 }
 
 h2 {
+  font-family: GilroyBold;
+}
+
+p, h3 {
   font-family: GilroyMedium;
 }
 
@@ -45,23 +49,183 @@ a {
 }
 
 /* nav */
+nav {
+  background-color: var(--main-color);
+  gap: 2vw; 
+}
+
 nav a img {
   max-width: 18vw;
 }
 
-nav {
-  display: flex;
-  gap: 2vw; 
-  position: absolute;
-}
-
 nav a {
   color: var(--accent-color);
-  font-family: GilroyMedium;
-  
+  font-family: GilroyMedium;  
+}
+
+ /* hero image */
+main section:nth-of-type(1) img{
+  height: 50vh;
+  border-radius: 1.5em;
+}
+
+main section:nth-of-type(1) {
+  /* display: flex;
+  justify-content: center;
+  overflow: hidden; */
+  background-color: var(--main-color);
+  padding: 5em;
+}
+
+main section:nth-of-type(1) h1 {
+  font-family: DopperRegular;
+  color: var(--accent-color);
+  font-size: 4.5em;
+}
+
+main section:nth-of-type(1) p {
+  font-size: 1.5em;
+  color: var(--accent-color);
 }
 
 
-main section:nth-of-type(1) img{
+/*buttons van section 1*/
+main section:nth-of-type(1) a{
+  font-family: GilroyBold;
+  font-size: 1em;
+  margin: 0.5em;
+  padding: 0.75em 1.25em;
+  border-radius: 0.8em;
+}
+
+main section:nth-of-type(1) a:first-of-type {
+  background-color: var(--third-color);
+  color: var(--accent-color);
+}
+
+main section:nth-of-type(1) a:last-of-type {
+  background-color: transparent;
+  color: var(--accent-color); 
+  border: 0.2em solid var(--accent-color);
+}
+
+
+
+/* buttons van section 2 & 4 */ 
+
+main section:nth-of-type(2) a, main section:nth-of-type(4) a{
+  font-family: GilroyBold;
+  font-size: 5vw;
+  padding: 0.60em 2em;
+  border-radius: 1em;
+  font-size: 1.2em;
+  max-width: fit-content;
+}
+
+main section:nth-of-type(2) a:first-of-type, main section:nth-of-type(4) a:first-of-type{
+  background-color: var(--main-color);
+  color: var(--accent-color); 
+  font-family: GilroyBold;
+}
+
+main section:nth-of-type(2) a:last-of-type, main section:nth-of-type(4) a:last-of-type{
+  background-color: transparent;
+  color: var(--third-color); 
+  border: 0.15em solid var(--third-color);
+}
+
+/* section 3 */
+main section:nth-child(3) h2{
+  font-size: 3.5em;
+  font-family: DopperRegular;
+  margin: 1em;
+}
+
+main section:nth-child(3) ul{
+  display: flex;
+}
+
+main section:nth-child(3) li {
+  list-style: none;
+}
+
+main section:nth-child(3) li a {
+  display: grid;
+  grid-template-rows: 20% 20% 40% 20%;
+  grid-template-columns: 1fr;
+}
+
+main section:nth-child(3) li a img {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  width: 100%;
+}
+
+main section:nth-child(3) li a p:first-of-type {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+main section:nth-child(3) p, section:nth-child(3) h3 {
+  color: var(--accent-color);
+}
+
+/* section 4 */
+main section:nth-of-type(4)  {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  grid-template-rows: 100%;
+}
+
+main section:nth-of-type(4) img {
+  grid-column: 1/3;
+  grid-row: 1/2;
   width: 100vw;
+  overflow: hidden;
+}
+
+main section:nth-of-type(4) article {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  background-color: var(--basic-color1);
+  margin-left: 4.5em;
+  margin-top: 2.5em;
+  margin-bottom: 5em;
+  padding: 2em;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  flex-wrap: wrap;
+}
+
+main section:nth-of-type(4) article h2 {
+  line-height: 3.6vw;
+  font-size: 3.5vw;
+}
+
+main section:nth-of-type(4) article p {
+  line-height: 1.8vw;
+  font-size: 1.5vw;
+  margin-top: 4vw;
+  margin-bottom: 2vw;
+}
+
+main section:nth-of-type(4) article a:first-of-type {
+  margin-bottom: 1.5vw;
+}
+
+/* section 5 */
+main section:nth-child(5) h2 {
+  font-family: GilroyMedium;
+}
+
+main section:nth-of-type(5) img {
+  width: 15vw;
+}
+
+/* footer */
+
+footer {
+  background-color: var(--accent-color);
 }
