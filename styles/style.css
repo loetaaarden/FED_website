@@ -10,7 +10,10 @@
 	--accent-color: #F6ECC8;
   --third-color: #000E2E;
   --basic-color1: #FCFAF2;
+  --basic-color2: #000000;
   --info-color1: #CEE0FF;
+  --info-color2: #BFFFF9;
+  --opacity-color: #F9F3DF;
 }
 
 @font-face {
@@ -47,6 +50,11 @@ p, h3 {
 
 a {
   text-decoration: none;
+  font-family: GilroyMedium;
+}
+
+main {
+  background-color: var(--basic-color1);
 }
 
 /* nav */
@@ -249,22 +257,224 @@ main section:nth-of-type(4) article p {
 main section:nth-child(5) h2 {
   font-family: GilroyMedium;
   margin: 20vw 10vw;
-  text-align: center;
 }
 
-main section:nth-of-type(5) img {
-  width: 15vw;
+main section:nth-of-type(5) li {
+  margin: 5vw 14vw;
+  list-style: none;
+  border-radius: 1em;
+}
+
+main section:nth-of-type(5) p {
+  color: var(--third-color);
+}
+
+main section:nth-of-type(5) li:nth-child(1) {
+  padding: 0vw;
+}
+
+main section:nth-of-type(5) li:nth-child(1) img {
+  width: 72vw;
 }
 
 main section:nth-of-type(5) li:nth-child(2) {
   background-color: var(--info-color1);
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: 50% 50%;
+  padding: 0vw;
 }
+
+main section:nth-of-type(5) li:nth-child(2) img {
+  width: 20vw;
+  height: 100%;
+  grid-column: 2/3;
+  grid-row: 1/3;
+  padding-top: 6vw;
+}
+
+main section:nth-of-type(5) li:nth-child(2) p {
+  margin-left: 7vw;
+  margin-top: 2vw;
+}
+
+main section:nth-of-type(5) li:nth-child(2) p:first-of-type {
+  font-family: DopperRegular;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-size: 4em;
+}
+
+main section:nth-of-type(5) li:nth-child(2) p:last-of-type {
+  font-family: GilroyBold;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+main section:nth-of-type(5) li:nth-child(3) {
+  background-color: var(--info-color2);
+  padding: 6vw;
+}
+
+main section:nth-of-type(5) li:nth-child(3) p {
+  font-family: DopperRegular;
+  font-size: 1.5em;
+}
+
+main section:nth-of-type(5) li:nth-child(4) {
+  background-color: var(--info-color1);
+  padding: 0vw;
+  height: 80vw;
+}
+
+main section:nth-of-type(5) li:nth-child(4) img {
+  width: 72vw;
+}
+
+main section:nth-of-type(5) li:nth-child(4) p {
+  font-family: DopperRegular;
+  font-size: 1.5em;
+  padding: 0.8em;
+}
+
 
 /* footer */
 
 footer {
   background-color: var(--accent-color);
+  margin-top: 40vw;
 }
+
+footer section:first-child, footer section:nth-of-type(2) {
+  padding: 8vw;
+}
+
+footer section a{
+  color: var(--basic-color2);
+}
+
+footer li {
+  list-style: none;
+}
+
+footer section:first-child article:first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer section:first-child article:first-child a img{
+  background-color: var(--opacity-color);
+  border-radius: 5em;
+  padding: 2vw;
+  width: 2.8em;
+  margin: 10vw 0vw;
+}
+
+footer section:first-child input {
+  margin: 5vw 0vw;
+  padding: 1.5em;
+  border-radius: 1.5em;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  background-color: var(--basic-color1);
+}
+
+footer section:first-child input::placeholder {
+  font-size: 1.4em;
+  font-family: GilroyMedium;
+}
+
+footer section:first-child input[type=submit] {
+  width: 1em;
+  height: 1em;
+  padding: 2.4em;
+  border-radius: 100%;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-right: 5vw;
+}
+
+footer section:first-child p {
+  font-family: GilroyBold;
+  font-size: 1.5em;
+}
+
+footer section:first-child ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.6fr 1fr 1fr;
+}
+
+footer section:first-child ul li {
+  padding-right: 2vw;
+}
+
+footer section:first-child ul li p {
+  font-size: 1.2em;
+}
+
+footer section:first-child ul li:first-child p {
+  font-family: DopperRegular;
+  font-size: 2em;
+  margin: 12vw 0vw;
+  grid-area: 1/1/2/2;
+}
+
+footer section:first-child ul li:nth-child(2){
+  grid-area: 2/1/3/2;
+  padding-bottom: 10vw;
+}
+
+footer section:first-child ul li:nth-child(3){
+  grid-area: 2/2/3/3;
+  padding-left: 2.5vw;
+}
+
+footer section:first-child ul li:nth-child(4){
+  grid-area: 3/1/4/2;
+}
+
+footer section:first-child ul li:nth-child(5){
+  grid-area: 3/2/4/3;
+  padding-left: 2.5vw;
+}
+
+footer section:first-child ul li section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5vw;
+}
+
+footer section:first-child ul li section a {
+  padding-top: 1vw;
+  font-size: 1em;
+}
+
+footer section:first-child article:last-of-type{
+  margin-top: 15vw;
+  display: flex;
+  gap: 8vw;
+}
+
+footer section:nth-of-type(2) {
+  background-color: var(--basic-color1);
+}
+
+footer section:last-child a img{
+  height: 3.2vh; /* ik heb hier gekozen om de iconen even groot te maken in tegenstelling tot wat dopper.com had gedaan aangezien ik dit er beter uit vindt zien  */
+  padding-right: 1vw;
+}
+
+footer section:last-child article {
+  display: flex;
+  flex-direction: row;
+  gap: 8vw;
+  margin-top: 5vw;
+}
+
 
 /* media query */
 
