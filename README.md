@@ -105,8 +105,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | of een list in | moet ik heel de nav| kan ik het   | is dit een h2?   | dit is op de normale site een foto? 
-  de footer voor de| uitwerken (met dropdown)| vertalen |    
+  | of een list in | moet ik heel de nav| kan ik het   | is dit een h2?   | 
+  de footer voor de| uitwerken          | vertalen |    
   linkjes mag/hanig is |                |van de site een als |
                                         | een van die special |
                                         |dingen gebruiken voor|
@@ -116,10 +116,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - 1: de list in de footer mag gewoon en werkt. 
+  - 2: ja met een hamburger menu
+  - 3: vertalen van de site is niet perse handig omdat dat dan eigenlijk gewoon een nieuwe pagina is maar andere tekst.
+  - 4: ja
 
 </details>
 
@@ -144,7 +144,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
-
+  | wat mag voor   | op mijn 2de pagina |
+  surface plane,   | had ik een class 
+  zijn de animaties| gezet maar de styling
+  die in de site al| wouw niet op de site 
+  zitten goed? zoals| doordat het die 
+  de hover? terwijl| eerste site effect 
+  het op mobiel zit?| hoe kan ik dit fixen?
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -241,8 +247,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
+  1.  https://angel-rs.github.io/css-color-filter-generator/
+  2. https://images.app.goo.gl/rNRYyNspaaYZukJHA
   3. ...
 
 </details>
