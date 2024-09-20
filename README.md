@@ -144,8 +144,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
-  | wat mag voor   | op mijn 2de pagina | mijn tekst is
-  surface plane,   | had ik een class   | meer bold op
+  | wat mag voor   | op mijn 2de pagina | mijn tekst is| hoe kan ik de submit
+  surface plane,   | had ik een class   | meer bold op | button een pijltje inzetten?
   zijn de animaties| gezet maar de styling| mijn site
   die in de site al| wouw niet op de site | in tegestelling
   zitten goed? zoals| doordat het die   | tot die van 
@@ -155,10 +155,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - 1: de hamburger menu is een surface plane, hover, dark mode, header als je omhoog scrolled ook. 
+  - 2: voor de 2de styling kan ik de main een class geven en dan de css selectors gebruiken
+  - 3: dat het iets meer bold is kan je kijken of het nog met bold kan veranderd worden maar een klien beetje verschil is niet heel erg.
+  - 4: Hiervoor heb ik een linkje gekrijgen hoe ik deze in de submit button kan zetten
 
 </details>
 
