@@ -5,6 +5,8 @@
   padding: 0;
 }
 
+/* de root */
+
 :root {
 	--main-color: #0067e5;
 	--accent-color: #F6ECC8;
@@ -16,6 +18,7 @@
   --opacity-color: #F9F3DF;
 }
 
+/* de lettertypes */
 @font-face {
   font-family: 'DopperRegular';
   src: url('../fonts/Dopper-Regular.5125e5cb.woff2');
@@ -39,6 +42,8 @@
   font-style: normal;
   font: inherit;
 }
+
+/* basic dingetjes */
 
 h2 {
   font-family: GilroyBold;
@@ -497,7 +502,74 @@ footer section:last-child article {
 .schools section:nth-of-type(3) h2 {
   font-family: GilroyMedium;
   font-size: 1.2em;
+  margin: 8vw;
 }
+
+.schools section:nth-of-type(3) p:first-of-type {
+  font-family: GilroyBold;
+  font-size: 1.2em;
+}
+
+.schools section:nth-of-type(3) p {
+  color: var(--basic-color2);
+  margin: 8vw;
+  font-size: 1.2em;
+  line-height: 7vw;
+}
+
+.schools section:nth-of-type(3) a {
+  color: var(--basic-color2);
+  text-decoration: underline;
+  font-size: 1.3em;
+  margin: 8vw;
+}
+
+.schools section:nth-of-type(3) img {
+  margin: 15vw 8vw;
+  width: 84vw;
+  max-height: 90vw;
+  border-radius: 1em;
+  object-fit: cover;
+}
+
+/* section 4 */
+
+.schools section:nth-of-type(4) img {
+  margin: 15vw 8vw;
+  width: 84vw;
+  max-height: 90vw;
+  border-radius: 1em;
+  object-fit: cover;
+}
+
+.schools section:nth-of-type(4) h2 {
+  font-family: GilroyMedium;
+  font-size: 1.2em;
+  margin: 8vw;
+}
+
+.schools section:nth-of-type(4) p:first-of-type{
+  margin: 8vw;
+  font-family: GilroyBold;
+  font-size: 1.2em;
+}
+
+.schools section:nth-of-type(4) p:last-of-type{
+  margin: 8vw;
+  font-size: 1.2em;
+}
+
+/* section 5 */
+.schools section:nth-of-type(5) h2 {
+  font-size: 1.6em;
+  margin: 30vw 40vw 0vw 8vw;
+}
+
+.schools section:nth-of-type(5) p {
+  font-size: 1em;
+  margin: 2vw 8vw;
+}
+
 
 /* media query */
 
