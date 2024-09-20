@@ -144,12 +144,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
-  | wat mag voor   | op mijn 2de pagina |
-  surface plane,   | had ik een class 
-  zijn de animaties| gezet maar de styling
-  die in de site al| wouw niet op de site 
-  zitten goed? zoals| doordat het die 
-  de hover? terwijl| eerste site effect 
+  | wat mag voor   | op mijn 2de pagina | mijn tekst is
+  surface plane,   | had ik een class   | meer bold op
+  zijn de animaties| gezet maar de styling| mijn site
+  die in de site al| wouw niet op de site | in tegestelling
+  zitten goed? zoals| doordat het die   | tot die van 
+  de hover? terwijl| eerste site effect | dopper
   het op mobiel zit?| hoe kan ik dit fixen?
 
   ### Verslag van meeting
