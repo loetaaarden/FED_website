@@ -128,6 +128,8 @@ nav {
   right:0;
   top:0;
   bottom:0;
+  padding:1em;
+  align-content:start;
 }
 
 nav a img {
@@ -142,6 +144,7 @@ nav a {
 
 .toonMenu {
   transform: translateY(0%); 
+  z-index: 2;
 }
 
 /* section 1 */
