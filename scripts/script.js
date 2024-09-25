@@ -27,4 +27,5 @@ function openMenu() {
 function sluitMenu() {
     var deNav = document.querySelector("nav");
     deNav.classList.remove("toonMenu");
-  }
+}
+

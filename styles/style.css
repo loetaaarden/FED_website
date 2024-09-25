@@ -82,9 +82,9 @@ header {
   max-height: 15vh;
 }
 
-header a img {
-  max-height: 3.3vh;
-  margin-top: 12vw;
+header section a img {
+  max-height: 1.8em;
+  margin-bottom: 2.3vh;
 }
 
 /* button */
@@ -95,9 +95,9 @@ header button {
 }
 
 header button img {
-  max-width: 18vw;
+  max-width: 5.4em;
   margin-top: 7vw;
-  margin-left: 8.5vw;
+  margin-left: 6vw;
   margin-right: 4.5vw;
 } 
 
@@ -270,28 +270,43 @@ main section:nth-of-type(2) a:last-of-type:hover, main section:nth-of-type(4) a:
 }
 
 /* section 3 */
-main section:nth-child(3) h2{
+
+main section:nth-of-type(3) h2{
   font-size: 2.5em;
   font-family: DopperRegular;
   margin: 1em;
 }
 
-main section:nth-child(3) ul{
+main section:nth-of-type(3) ul{
   display: flex;
+  transition: transform 0.5s ease-in-out;
+  scroll-snap-type: inline mandatory;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  width: 100vw;
+  overflow-x: auto;
 }
 
-main section:nth-child(3) li {
+main section:nth-of-type(3) ul::-webkit-scrollbar{
+  display: none;
+}
+
+main section:nth-of-type(3) li {
   list-style: none;
-  margin: 5vw;
+  margin: 0vw 2.5vw;
 }
 
-main section:nth-child(3) li a img {
-  width: 90vw;
-  border-radius: 5vw;
+main section:nth-of-type(3) li:first-of-type {
+  margin-left: 8vw;
 }
 
+main section:nth-of-type(3) li a img {
+  width: 77vw;
+  height: 52vh;
+  border-radius: 3vw;
+}
 
-main section:nth-child(3) p, section:nth-child(3) h3 {
+main section:nth-of-type(3) p, section:nth-child(3) h3 {
   color: var(--accent-color);
 }
 
@@ -299,6 +314,30 @@ main section:nth-of-type(3) li:first-child h3, main section:nth-of-type(3) li:fi
   color: var(--third-color);
 }
 
+/* section 3 text */
+main section:nth-of-type(3) ul li a h3 {
+  font-size: 2em;
+  margin: 4vw 5vw;
+  position: absolute;
+}
+
+main section:nth-of-type(3) ul li a p {
+  font-size: 1.3em;
+  margin: 4vw 5vw;
+  margin-right: 7vw;
+  position: absolute;
+  margin-top: 15vw;
+}
+
+main section:nth-of-type(3) ul li a p:last-of-type{
+  text-decoration: underline;
+  bottom: 0vw;
+}
+
+main section:nth-of-type(3) a{
+  position: relative;
+
+}
 /* section 4 */
 
 main section:nth-of-type(4) img {
