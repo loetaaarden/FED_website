@@ -62,11 +62,53 @@ main {
   background-color: var(--basic-color1);
 }
 
-/* nav */
-nav {
-  background-color: var(--main-color);
-  gap: 2vw; 
+/* header */
+
+header {
+  background-color: var(--main-color); 
+  display: flex;
+  justify-content: end;
+  max-height: 15vh;
 }
+
+header a img {
+  max-height: 3.3vh;
+  margin-top: 12vw;
+}
+
+/* button */
+
+header button {
+  background-color: transparent;
+  border: none;
+}
+
+header button img {
+  max-width: 18vw;
+  margin-top: 7vw;
+  margin-left: 8.5vw;
+  margin-right: 4.5vw;
+} 
+
+/* sluit button */
+
+nav {
+  /* background-color: var(--main-color);  */
+}
+
+nav button {
+  max-width: 18vw;
+  margin-top: 7vw;
+  margin-left: 8.5vw;
+  margin-right: 4.5vw;
+}
+
+nav button img{
+  margin: 0vw;
+  padding: 0vw;
+}
+
+/* nav */
 
 nav a img {
   max-width: 18vw;
@@ -74,7 +116,27 @@ nav a img {
 
 nav a {
   color: var(--accent-color);
-  font-family: GilroyMedium;  
+  font-family: GilroyMedium; 
+  flex-wrap: wrap; 
+}
+
+nav {
+  padding:1em;
+  display:grid;
+  align-content:start;
+  gap:1em;
+  background-image:var(--menu-gradient);
+  position:fixed;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  /* translate:-100% 0%; */
+  transition:translate .3s;
+}
+
+nav.toonMenu {
+  translate:0% 0%;
 }
 
 /* section 1 */
@@ -354,7 +416,7 @@ footer {
   margin-top: 40vw;
 }
 
-footer section:first-child, footer section:nth-of-type(2) {
+footer section:first-of-type, footer section:nth-of-type(2) {
   padding: 8vw;
 }
 
@@ -366,13 +428,13 @@ footer li {
   list-style: none;
 }
 
-footer section:first-child article:first-child {
+footer section:first-of-type article:first-child {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-footer section:first-child article:first-child a img{
+footer section:first-of-type article:first-child a img{
   background-color: var(--opacity-color);
   border-radius: 5em;
   padding: 2vw;
@@ -380,8 +442,8 @@ footer section:first-child article:first-child a img{
   margin: 10vw 0vw;
 }
 
-footer section:first-child input {
-  margin: 5vw 0vw;
+footer section:first-of-type input {
+  margin: 4vw 0vw;
   padding: 1.5em;
   border-radius: 1.5em;
   border: none;
@@ -389,80 +451,84 @@ footer section:first-child input {
   flex-direction: column;
   width: 80vw;
   background-color: var(--basic-color1);
-}
+} 
 
-footer section:first-child input::placeholder {
+footer section:first-of-type input::placeholder {
   font-size: 1.4em;
   font-family: GilroyMedium;
 }
 
-footer section:first-child input[type=submit] {
-  width: 1em;
-  height: 1em;
-  padding: 2.4em;
-  border-radius: 100%;
-  justify-content: flex-end;
-  margin-left: auto;
-  margin-right: 5vw;
+footer section:first-of-type button {
+  border-radius: 5em;
+  background-color: var(--basic-color1);
+  padding: 1.2em;
+  border: none;
+  margin-left: 65vw;
 }
 
-footer section:first-child p {
+footer section:first-of-type button img {
+  max-height: 3vh;
+}
+
+footer section:first-of-type p {
   font-family: GilroyBold;
   font-size: 1.5em;
 }
 
-footer section:first-child ul {
+footer section:first-of-type ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.6fr 1fr 1fr;
 }
 
-footer section:first-child ul li {
+footer section:first-of-type ul li {
   padding-right: 2vw;
 }
 
-footer section:first-child ul li p {
+footer section:first-of-type ul li p {
   font-size: 1.2em;
 }
 
-footer section:first-child ul li:first-child p {
+footer section:first-of-type ul li:first-child p {
   font-family: DopperRegular;
   font-size: 2em;
   margin: 12vw 0vw;
   grid-area: 1/1/2/2;
 }
 
-footer section:first-child ul li:nth-child(2){
+footer section:first-of-type ul li:nth-child(2){
   grid-area: 2/1/3/2;
   padding-bottom: 10vw;
 }
 
-footer section:first-child ul li:nth-child(3){
+footer section:first-of-type ul li:nth-child(3){
   grid-area: 2/2/3/3;
   padding-left: 2.5vw;
 }
 
-footer section:first-child ul li:nth-child(4){
+footer section:first-of-type ul li:nth-child(4){
   grid-area: 3/1/4/2;
 }
 
-footer section:first-child ul li:nth-child(5){
+footer section:first-of-type ul li:nth-child(5){
   grid-area: 3/2/4/3;
   padding-left: 2.5vw;
 }
 
-footer section:first-child ul li section {
+footer section:first-of-type ul li section {
   display: flex;
   flex-direction: column;
   padding-top: 5vw;
+  padding-left: 0%;
+  padding-right: 0%;
 }
 
-footer section:first-child ul li section a {
+footer section:first-of-type ul li section a {
   padding-top: 1vw;
   font-size: 1em;
 }
 
-footer section:first-child article:last-of-type{
+footer section:first-of-type article:last-of-type{
   margin-top: 15vw;
   display: flex;
   gap: 8vw;
@@ -472,12 +538,12 @@ footer section:nth-of-type(2) {
   background-color: var(--basic-color1);
 }
 
-footer section:last-child a img{
+footer section:last-of-type a img{
   height: 3.2vh; /* ik heb hier gekozen om de iconen even groot te maken in tegenstelling tot wat dopper.com had gedaan aangezien ik dit er beter uit vindt zien  */
   padding-right: 1vw;
 }
 
-footer section:last-child article {
+footer section:last-of-type article {
   display: flex;
   flex-direction: row;
   gap: 8vw;
