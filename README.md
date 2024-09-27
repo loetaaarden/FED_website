@@ -61,6 +61,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - de navigatie spreekt de voiceover uit als "bottle, image, tap, image, ect...." dus elke keer blijft hij de "image" herhalen aangezien de kleine dropdown hebben ze als image neergezet waardoor dat wordt uitgesproken.
   - ook komen er dingen omhoog die niet te zien zijnn om de pagina maar wel allemaal gezegd worden omdat ze in het menu zitten als je erop klikt. Hierdoor wordt het wel heel vaag en is het niet te volgen.
 
+  a11y test: 
+  content: <img src="readme-images/a11y_image1.png">
+  De dopper website maakt wel gebruik van duidelijk leesbare tekst. Ook zijn de buttons ect duidelijk omdat ze vaak zeggen "read our (en dan waarover je meer kan lezen)" waardoor je wel duidelijk weet waar je meer over gaat lezen/waar je naar toe gaat. En de tekst is ook fijn leesbaar gepositioneerd.
+
+  global code: <img src="readme-images/a11y_image2.png">
+  De html code van de heeft 377 errors. Ook zit er css en javascript in de html.
+
+  keyboard:
+
+
   andere websites:
   - bij andere websites die ik heb gechecked heb ik gemerkt dat er vaak bijvoorbeeld een foto met een alt tekst staat en dan nog een keer de titel wordt uitgesproken.
   - ook is bij veel websites die volgorde hoe het wordt verteld totaal niet duidelijk.
