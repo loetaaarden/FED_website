@@ -43,7 +43,7 @@
   font: inherit;
 }
 
-/* @keyframes borderAnimation {
+@keyframes borderAnimation {
   0% {
     border-bottom-left-radius: 30%;
     border-bottom-right-radius: 30%;
@@ -52,7 +52,7 @@
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
-} */
+} 
 
 /* basic dingetjes */
 
@@ -121,7 +121,7 @@ nav {
   background-color: var(--main-color); 
   transform: translateY(-100%); 
   transition: transform 1s ease-out; 
-  /* animation-name: borderAnimation; */
+  animation-name: borderAnimation; 
   padding:1em;
   position:fixed;
   left:0;
@@ -359,14 +359,14 @@ main section:nth-of-type(4) article a:first-of-type {
 
 main section:nth-of-type(4) article h2 {
   line-height: 10vw;
-  font-size: 10vw;
+  font-size: 2.2em;
   margin-top: 8vw;
   margin-bottom: 5vw;
 }
 
 main section:nth-of-type(4) article p {
-  line-height: 6.5vw;
-  font-size: 5vw;
+  line-height: 1.2em;
+  font-size: 1em;
   max-width: 80vw;
 }
 
