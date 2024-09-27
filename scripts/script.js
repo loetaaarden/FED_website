@@ -3,29 +3,25 @@ console.log("hi");
 
 var openButton = document.querySelector(".hamburger");
 var sluitButton = document.querySelector("nav button");
+var deNav = document.querySelector("nav");
+const details = document.querySelectorAll("details");
 
 openButton.onclick = openMenu;
 sluitButton.onclick = sluitMenu;
 
-// Functie om het menu te openen en te sluiten
 function openMenu() {
-    // Selecteer de nav
-    var deNav = document.querySelector("nav");
     
-    // Toggle de class toonMenu op de nav zodat de css de nav kan laten zien of verbergen
+    document.body.style.overflow = "hidden";
     deNav.classList.toggle("toonMenu");
-    
-    // Als de nav wordt getoond, dan wordt de scroll van de body uitgezet
-    // Als de nav wordt verborgen, dan wordt de scroll van de body weer aangezet
-    if (deNav.classList.contains("toonMenu")) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = document.body.style.overflow === "hidden" ? "" : "auto";
-    }
 }
 
 function sluitMenu() {
+    for(let i=0; i<details.length; i++) {
+        details[i].removeAttribute("open"); 
+    }
+    // hier heb ik hulp van mariska bij gekregen
     var deNav = document.querySelector("nav");
     deNav.classList.remove("toonMenu");
+    document.body.style.overflow = "auto";
 }
 

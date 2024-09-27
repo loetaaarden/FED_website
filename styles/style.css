@@ -67,7 +67,7 @@ p, h3 {
 a {
   text-decoration: none;
   font-family: GilroyMedium;
-}
+} 
 
 main {
   background-color: var(--basic-color1);
@@ -104,22 +104,25 @@ header button img {
 /* sluit button */
 
 nav button {
-  max-width: 18vw;
   margin-top: 7vw;
   margin-left: 8.5vw;
   margin-right: 4.5vw;
 }
 
 nav button img{
+  max-width: 5.8em;
   margin: 0vw;
   padding: 0vw;
+  position: absolute;
+  right: 1.1em;
+  top: 2em;
 }
 
 /* nav */
 
 nav {
-  background-color: var(--main-color); 
-  transform: translateY(-100%); 
+  background-color: var(--main-color);  
+  transform: translateY(-150%); 
   transition: transform 1s ease-out; 
   animation-name: borderAnimation; 
   padding:1em;
@@ -129,7 +132,7 @@ nav {
   top:0;
   bottom:0;
   padding:1em;
-  align-content:start;
+  align-content: start;
 }
 
 nav a img {
@@ -145,6 +148,7 @@ nav a {
 .toonMenu {
   transform: translateY(0%); 
   z-index: 2;
+  overflow: scroll;
 }
 
 /* section 1 */
