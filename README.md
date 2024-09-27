@@ -73,8 +73,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
-  <img src="../FED_website/readme-images/breakdownschets.png" width="375px" alt="breakdown van de hele pagina">
+
   ### de hele pagina: 
+  <img src="../FED_website/readme-images/breakdownschets.png" width="375px" alt="breakdown van de hele pagina">
 
 </details>
 
