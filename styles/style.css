@@ -8,6 +8,8 @@
 /* de root */
 
 :root {
+  color-scheme: light; 
+/* light colors */
 	--main-color: #0067e5;
 	--accent-color: #F6ECC8;
   --third-color: #000E2E;
@@ -17,6 +19,20 @@
   --info-color1: #CEE0FF;
   --info-color2: #BFFFF9;
   --opacity-color: #F9F3DF;
+}
+
+:root:has([value="dark"]:checked) {
+	color-scheme:dark;
+/* dark colors */
+  --main-color: #000E2E; 
+  --accent-color: #5f5440; 
+  --third-color: #0067e5;
+  --fourth-color: #004299;
+  --basic-color1: #000000;
+  --basic-color2: #FCFAF2;
+  --info-color1: #00348e;
+  --info-color2: #78918e;
+  --opacity-color: #9c927e;
 }
 
 /* de lettertypes */
@@ -56,18 +72,21 @@
 
 h2 {
   font-family: GilroyBold;
+  color: var(--basic-color2);
 }
 
 p, h3 {
   font-family: GilroyMedium;
+  color: var(--basic-color2);
 }
 
 a {
   text-decoration: none;
   font-family: GilroyMedium;
+  color: var(--basic-color2);
 } 
 
-main {
+body {
   background-color: var(--basic-color1);
 }
 
@@ -97,50 +116,47 @@ header button {
   border: none;
 }
 
-header button img {
+header section > button img {
   max-width: 5.4em;
   margin-top: 7vw;
   margin-left: 6vw;
   margin-right: 4.5vw;
 } 
 
-/* sluit button */
+/* nav tevoorschijn */
 
-nav button {
-  top: 7vw;
-  left: 8.5vw;
-  margin-right: 4.5vw;
+.toonMenu {
+  transform: translateY(0%); 
+  z-index: 2;
+  overflow: scroll;
 }
 
-nav button img{
+/* sluit button & cart */
+
+nav ul {
+  position: sticky;
+  top: 3.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li button img{
   max-width: 5.8em;
-  margin: 0vw;
-  padding: 0vw;
-  position: absolute;
-  right: 1.1em;
-  top: 2em;
+}
+
+nav ul li a img{
+  max-width: 11.5vw;
 }
 
 /* nav */
-nav > a:first-of-type {
-  margin-top: 8vw;
-  margin-left: 8.5vw;
-  margin-right: 4.5vw;
-}
-
-nav > a:first-of-type img{
-  max-width: 11.5vw;
-  margin: 0vw;
-  padding: 0vw;
-  position: absolute;
-  right: 79vw;
-  top: 6.5vw;
-  position: sticky;
-}
-
 nav {
   background-color: var(--main-color);  
-  transform: translateY(-150%); 
+  transform: translateY(-200%); 
   transition: transform 1s ease-out; 
   /* animation-name: borderAnimation;  */
   position:fixed;
@@ -148,14 +164,8 @@ nav {
   right:0;
   top:0;
   bottom:0;
-  padding:1.8em;
+  padding:1.2em;
   align-content: start;
-}
-
-nav a {
-  color: var(--accent-color);
-  font-family: GilroyMedium; 
-  flex-wrap: wrap; 
 }
 
 /* details hamburger menu */
@@ -163,24 +173,24 @@ nav a {
 nav details summary {
   font-family: GilroyBold;
   color: var(--basic-color1);
-  font-size: 1.9em;
+  font-size: 2em;
   margin-top: 5vw;
   size: 1vw;
   list-style: none;
 }
 
 nav details:first-of-type summary {
-  margin-top: 22vw;
+  margin-top: 13vw;
 }
 
 nav details > summary::after { /*bron: https://www.sitepoint.com/style-html-details-element/*/
   content: "";
   display: inline-block;
-  width: 20px; 
-  height: 20px;
+  width: 5vw; 
+  height: 5vw;
+  margin-left: 4vw;
   background: url('../images/menu_arrow.svg') no-repeat center center;
   background-size: contain;
-  transition: 0.4s;
   filter: invert(100%);
 }
 
@@ -189,42 +199,68 @@ details[open] > summary::after {
 }
 
 nav details a {
-  font-family: GilroyMedium;
   display: flex;
-  font-size: 1.5em;
   gap: 5vw;
-  margin: 2.5vw;
-  flex-wrap: wrap;
+  margin: 4.5vw 0vw;
 }
 
 nav details a img {
-  max-width: 15vw;
-  max-height: 15vw;
+  max-width: 16.5vw;
   display: flex;
   align-items: center;
 }
 
-nav details p {
+nav details a p {
+  font-family: GilroyMedium;
+  font-size: 1.4em;
+  color: var(--accent-color);
+}
+
+nav details:first-of-type a p {
+  margin-top: 5vw;
+}
+
+nav details:first-of-type a:last-of-type img {
+  max-height: 3.5vh;
+}
+
+nav details:first-of-type a:last-of-type p {
+  margin-top: 2vw;
+}
+
+nav details:nth-of-type(2) a:last-of-type img {
+  max-height: 8vh;
+  margin-right: 5vw;
+}
+
+nav details > p {
   font-family: GilroyBold;
   color: var(--basic-color1);
   font-size: 1.3em;
   margin: 10vw 0vw;
 }
 
-nav > a:nth-of-type(2), nav > a:nth-of-type(3) {
+/* nav buttons */
+
+nav > a:nth-of-type(1), nav > a:nth-of-type(2) {
   font-size: 1.3em;
-  border: 0.6vw solid var(--basic-color1);
+  border: 0.6vw solid var(--accent-color);
   border-radius: 5vw;
   padding: 3vw 8vw;
   margin: 4vw 1vw;
   display: flex;
   flex-direction: column;
   max-width: fit-content;
+  color: var(--accent-color);
+  font-family: GilroyMedium; 
+  flex-wrap: wrap;
 }
 
-nav > a:nth-of-type(2) {
-  margin-top: 15vw;
+nav > a:nth-of-type(1) {
+  margin-top: 13vw;
 }
+
+/* nav article */
 
 nav article {
   background-color: var(--fourth-color);
@@ -233,23 +269,22 @@ nav article {
   flex-direction: column;
   align-items: center;
   margin: 15vw 0vw;
-  
 }
 
 nav article img {
   height: 28vh;
-  max-width: 80vw;
+  max-width: 85vw;
   object-fit: cover;
   align-self: center;
   margin: 2.5vw;
-  border-radius: 4vw;
+  border-radius: 3vw;
 }
 
 nav article a {
   color: var(--basic-color2);
   font-size: 1.3em;
   border: 0.6vw solid var(--basic-color2);
-  border-radius: 5vw;
+  border-radius: 3vw;
   padding: 3vw 8vw;
   margin: 4vw 1vw;
   display: flex;
@@ -268,10 +303,8 @@ nav article p {
   text-align: center;
 }
 
-.toonMenu {
-  transform: translateY(0%); 
-  z-index: 2;
-  overflow: scroll;
+nav > a:last-of-type {
+  color: var(--basic-color1);
 }
 
 /* section 1 */
@@ -391,7 +424,7 @@ main section:nth-of-type(2) a:last-of-type, main section:nth-of-type(4) a:last-o
   border: 0.15em solid var(--third-color);
 }
 
-main section:nth-of-type(2) a:last-of-type:hover, main section:nth-of-type(4) a:last-of-type:hover {
+main section:nth-of-type(2) a:last-of-type:active, main section:nth-of-type(4) a:last-of-type:active {
   background-color: var(--third-color);
   color: var(--accent-color); 
 }
@@ -520,6 +553,7 @@ main section:nth-of-type(5) li:nth-child(1) {
 
 main section:nth-of-type(5) li:nth-child(1) img {
   width: 72vw;
+  border-radius: 1em;
 }
 
 main section:nth-of-type(5) li:nth-child(2) {
@@ -574,6 +608,7 @@ main section:nth-of-type(5) li:nth-child(4) {
 
 main section:nth-of-type(5) li:nth-child(4) img {
   width: 72vw;
+  border-radius: 1em;
 }
 
 main section:nth-of-type(5) li:nth-child(4) p {
