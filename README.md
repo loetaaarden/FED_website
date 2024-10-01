@@ -227,15 +227,18 @@ alles werkt goed op mobile versie behalve dat als je een mobiel horizontaal draa
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
-
+1. mn menu knop werkt wel op 1 site maar niet op de andere?
+2. ik krijg die carousel buttons niet te zien? 
+3. bij de form heb i geen action maar dat geeft een error?s
+4. zijn dit sections of divjes?
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - mn javascript stond op een verkeerde plek (dit probeelm had ik ookal bij de vorige pagina maar had dit nog niet bij de 2de pagina gedaan)
+  - 
+  - voeg hier text in toe dat het terug gaat naar de pagina zodat er dan niks gebeurt.
+  - dit zal ik een lijstje in het orginele lijstje maken.
 
 </details>
 

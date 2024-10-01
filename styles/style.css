@@ -11,6 +11,7 @@
 	--main-color: #0067e5;
 	--accent-color: #F6ECC8;
   --third-color: #000E2E;
+  --fourth-color: #CCE2FF;
   --basic-color1: #FCFAF2;
   --basic-color2: #000000;
   --info-color1: #CEE0FF;
@@ -24,7 +25,6 @@
   src: url('../fonts/Dopper-Regular.5125e5cb.woff2');
   font-weight: normal;
   font-style: normal;
-  font: inherit; 
 }
 
 @font-face {
@@ -32,7 +32,6 @@
   src: url('../fonts/Gilroy-Medium.605c261f.woff2');
   font-weight: normal;
   font-style: normal;
-  font: inherit;
 }
 
 @font-face {
@@ -40,10 +39,9 @@
   src: url('../fonts/Gilroy-Bold.af2227af.woff2');
   font-weight: 900;
   font-style: normal;
-  font: inherit;
 }
 
-@keyframes borderAnimation {
+/* @keyframes borderAnimation {
   0% {
     border-bottom-left-radius: 30%;
     border-bottom-right-radius: 30%;
@@ -52,7 +50,7 @@
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
-} 
+}  */
 
 /* basic dingetjes */
 
@@ -71,6 +69,11 @@ a {
 
 main {
   background-color: var(--basic-color1);
+}
+
+.invisibleheading {
+  visibility: hidden;
+  font-size: 0.0001%;
 }
 
 /* header */
@@ -104,8 +107,8 @@ header button img {
 /* sluit button */
 
 nav button {
-  margin-top: 7vw;
-  margin-left: 8.5vw;
+  top: 7vw;
+  left: 8.5vw;
   margin-right: 4.5vw;
 }
 
@@ -119,30 +122,150 @@ nav button img{
 }
 
 /* nav */
+nav > a:first-of-type {
+  margin-top: 8vw;
+  margin-left: 8.5vw;
+  margin-right: 4.5vw;
+}
+
+nav > a:first-of-type img{
+  max-width: 11.5vw;
+  margin: 0vw;
+  padding: 0vw;
+  position: absolute;
+  right: 79vw;
+  top: 6.5vw;
+  position: sticky;
+}
 
 nav {
   background-color: var(--main-color);  
   transform: translateY(-150%); 
   transition: transform 1s ease-out; 
-  animation-name: borderAnimation; 
-  padding:1em;
+  /* animation-name: borderAnimation;  */
   position:fixed;
   left:0;
   right:0;
   top:0;
   bottom:0;
-  padding:1em;
+  padding:1.8em;
   align-content: start;
-}
-
-nav a img {
-  max-width: 18vw;
 }
 
 nav a {
   color: var(--accent-color);
   font-family: GilroyMedium; 
   flex-wrap: wrap; 
+}
+
+/* details hamburger menu */
+
+nav details summary {
+  font-family: GilroyBold;
+  color: var(--basic-color1);
+  font-size: 1.9em;
+  margin-top: 5vw;
+  size: 1vw;
+  list-style: none;
+}
+
+nav details:first-of-type summary {
+  margin-top: 22vw;
+}
+
+nav details > summary::after { /*bron: https://www.sitepoint.com/style-html-details-element/*/
+  content: "";
+  display: inline-block;
+  width: 20px; 
+  height: 20px;
+  background: url('../images/menu_arrow.svg') no-repeat center center;
+  background-size: contain;
+  transition: 0.4s;
+  filter: invert(100%);
+}
+
+details[open] > summary::after {
+  transform: rotate(180deg);
+}
+
+nav details a {
+  font-family: GilroyMedium;
+  display: flex;
+  font-size: 1.5em;
+  gap: 5vw;
+  margin: 2.5vw;
+  flex-wrap: wrap;
+}
+
+nav details a img {
+  max-width: 15vw;
+  max-height: 15vw;
+  display: flex;
+  align-items: center;
+}
+
+nav details p {
+  font-family: GilroyBold;
+  color: var(--basic-color1);
+  font-size: 1.3em;
+  margin: 10vw 0vw;
+}
+
+nav > a:nth-of-type(2), nav > a:nth-of-type(3) {
+  font-size: 1.3em;
+  border: 0.6vw solid var(--basic-color1);
+  border-radius: 5vw;
+  padding: 3vw 8vw;
+  margin: 4vw 1vw;
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+}
+
+nav > a:nth-of-type(2) {
+  margin-top: 15vw;
+}
+
+nav article {
+  background-color: var(--fourth-color);
+  border-radius: 4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15vw 0vw;
+  
+}
+
+nav article img {
+  height: 28vh;
+  max-width: 80vw;
+  object-fit: cover;
+  align-self: center;
+  margin: 2.5vw;
+  border-radius: 4vw;
+}
+
+nav article a {
+  color: var(--basic-color2);
+  font-size: 1.3em;
+  border: 0.6vw solid var(--basic-color2);
+  border-radius: 5vw;
+  padding: 3vw 8vw;
+  margin: 4vw 1vw;
+  display: flex;
+  max-width: fit-content;
+  margin-bottom: 8vw;
+}
+
+nav article h2 {
+  font-size: 1.4em;
+  margin: 4vw;
+}
+
+nav article p {
+  font-size: 1.3em;
+  margin: 4vw 8vw;
+  text-align: center;
 }
 
 .toonMenu {

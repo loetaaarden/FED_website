@@ -1,7 +1,7 @@
 // JavaScript Document
 console.log("hi");
 
-var openButton = document.querySelector(".hamburger");
+var openButton = document.querySelector("header section button"); 
 var sluitButton = document.querySelector("nav button");
 var deNav = document.querySelector("nav");
 const details = document.querySelectorAll("details");
