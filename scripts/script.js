@@ -1,6 +1,7 @@
-var openButton = document.querySelector("header section button"); 
-var sluitButton = document.querySelector("nav button");
-var deNav = document.querySelector("nav");
+const openButton = document.querySelector("header section button"); 
+const sluitButton = document.querySelector("nav button");
+const deNav = document.querySelector("nav");
+const imageContainer = document.querySelector("#imageContainer")
 const details = document.querySelectorAll("details"); //selecteert alle details
 
 openButton.onclick = openMenu;
@@ -21,18 +22,27 @@ function EenOpen(OpenDetail) {
 } // bron:https://stackoverflow.com/questions/16751345/automatically-close-all-the-other-details-tags-after-opening-a-specific-detai
 
 function openMenu() {
-    
-    document.body.style.overflow = "hidden";
-    deNav.classList.toggle("toonMenu");
+  document.body.style.overflow = "hidden"; //stops scrolling
+  deNav.classList.toggle("toonMenu"); //adds a class to nav
 }
 
 function sluitMenu() {
-    for(let i=0; i<details.length; i++) {
-        details[i].removeAttribute("open"); 
-    }
-    // hier heb ik hulp van mariska bij gekregen
-    var deNav = document.querySelector("nav");
-    deNav.classList.remove("toonMenu");
-    document.body.style.overflow = "auto";
+  for(let i=0; i<details.length; i++) { // checkt voor elke details of die nog open is
+     details[i].removeAttribute("open"); // als dat zo is haalt die de open weg
+  } // hier heb ik hulp van mariska bij gekregen
+
+  deNav.classList.remove("toonMenu");
+  document.body.style.overflow = "auto";
 }
 
+function VeranderFoto() {
+  const scrollPosition = window.scrollY; //laat weten hoeveel pixel er gescrolled is
+
+  if (scrollPosition > 0.1) { // als er meer dan 10 pixel voegt de class scrolled toe
+    imageContainer.classList.add("scrolled");
+  } else {
+    imageContainer.classList.remove("scrolled");
+  }
+}
+
+window.addEventListener("scroll", VeranderFoto); //elke keer als de er gescrolled wordt zal de function uitgevoerd worden
