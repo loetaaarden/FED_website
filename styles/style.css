@@ -95,7 +95,7 @@
   }
 }
 
-@keyframes bubbles1 {
+@keyframes bubbles1 { /* bron: https://utilitybend.com/blog/animating-clip-paths-on-scroll-with-at-property-in-css/ */
   0% {
     clip-path: circle(0% at 10% 90%);
   }
@@ -246,20 +246,16 @@ nav ul li a img{
 /* nav tevoorschijn */
 
 .toonMenu {
-  /* transform: translateY(0%);  */
   z-index: 2;
   overflow: scroll;
   visibility: visible;
   animation-name: borderAnimation;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 
 /* nav */
 nav {
   background-color: var(--main-color);  
-  /* transform: translateY(-120%);  */
-  /* transition: transform 1.5s ease-in;  */
-  /* animation-name: borderAnimation;  */
   position:fixed;
   left:0;
   right:0;
@@ -395,6 +391,11 @@ nav article a {
   margin-bottom: 8vw;
 }
 
+nav article a:active{
+  background-color: var(--basic-color2);
+  color: var(--fourth-color);
+}
+
 nav article h2 {
   font-size: 1.4em;
   margin: 4vw;
@@ -406,6 +407,7 @@ nav article p {
   text-align: center;
 }
 
+/* laatste details nav */
 nav > details:last-of-type summary {
   font-family: GilroyMedium;
   font-size: 1em;
@@ -553,6 +555,13 @@ main section:nth-of-type(1) a:last-of-type {
   color: var(--accent-color); 
   border: 0.15em solid var(--accent-color);
   bottom: 25vw;
+}
+
+main section:nth-of-type(1) a:last-of-type:active, 
+nav > a:nth-of-type(1):active, 
+nav > a:nth-of-type(2):active {
+  background-color: var(--accent-color);
+  color: var(--main-color);
 }
 
 /* section 2 */
