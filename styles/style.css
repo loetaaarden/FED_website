@@ -432,6 +432,7 @@ main section:nth-of-type(1) {
   position: relative;
   overflow: hidden;
   height: 217vw;
+  width: 100vw;
 }
 
 main section:nth-of-type(1) img:first-of-type{

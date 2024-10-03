@@ -1,7 +1,6 @@
 const openButton = document.querySelector("header section button"); 
 const sluitButton = document.querySelector("nav button");
 const deNav = document.querySelector("nav");
-const imageContainer = document.querySelector("#imageContainer")
 const details = document.querySelectorAll("details"); //selecteert alle details
 
 openButton.onclick = openMenu;
@@ -34,15 +33,3 @@ function sluitMenu() {
   deNav.classList.remove("toonMenu");
   document.body.style.overflow = "auto";
 }
-
-function VeranderFoto() {
-  const scrollPosition = window.scrollY; //laat weten hoeveel pixel er gescrolled is
-
-  if (scrollPosition > 0.1) { // als er meer dan 10 pixel voegt de class scrolled toe
-    imageContainer.classList.add("scrolled");
-  } else {
-    imageContainer.classList.remove("scrolled");
-  }
-}
-
-window.addEventListener("scroll", VeranderFoto); //elke keer als de er gescrolled wordt zal de function uitgevoerd worden
