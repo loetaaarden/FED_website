@@ -204,6 +204,31 @@ alles werkt goed op mobile versie behalve dat als je een mobiel horizontaal draa
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+
+a11y test: 
+
+content: <img src="">
+
+global code: <img src="">
+
+keyboard: <img src=""> 
+
+Images: <img src=""> 
+
+Headings: <img src=""> 
+
+Controls: <img src=""> 
+
+forms: <img src=""> 
+
+Appearance: <img src=""> 
+
+Animation: <img src=""> 
+
+Color Contrast: <img src=""> 
+
+Mobile and touch: <img src=""> 
+
 </details>
 
 
@@ -282,6 +307,6 @@ alles werkt goed op mobile versie behalve dat als je een mobiel horizontaal draa
 
   1.  https://angel-rs.github.io/css-color-filter-generator/
   2. https://images.app.goo.gl/rNRYyNspaaYZukJHA
-  3. ...
+  3. 
 
 </details>

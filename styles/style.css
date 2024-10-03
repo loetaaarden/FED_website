@@ -19,6 +19,7 @@
   --info-color1: #CEE0FF;
   --info-color2: #BFFFF9;
   --opacity-color: #F9F3DF;
+  --focus-color: #a8a187;
 }
 
 :root:has([value="dark"]:checked) {
@@ -35,6 +36,7 @@
   --info-color1: #00348e;
   --info-color2: #CEE0FF;
   --opacity-color: #636d81; /*bron: https://pinetools.com/invert-color */
+  --focus-color: #423a2b;
 }
 
 /* de lettertypes */
@@ -274,7 +276,6 @@ nav details summary {
   color: var(--basic-color1);
   font-size: 2em;
   margin-top: 5vw;
-  size: 1vw;
   list-style: none;
 }
 
@@ -467,12 +468,10 @@ nav > h3 {
 nav label {
   display: flex;
   margin-bottom: 4vw;
-}
-
-nav label p {
   font-family: GilroyMedium;
   color: var(--basic-color1);
   margin-left: 2vw;
+  gap: 1em;
 }
 
 /* section 1 */
@@ -861,6 +860,10 @@ footer section:first-of-type input {
   width: 80vw;
   background-color: var(--basic-color1);
 } 
+
+footer section:first-of-type input:focus {
+  background-color: var(--focus-color);
+}
 
 footer section:first-of-type input::placeholder {
   font-size: 1.4em;
