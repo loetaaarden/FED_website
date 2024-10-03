@@ -205,29 +205,32 @@ alles werkt goed op mobile versie behalve dat als je een mobiel horizontaal draa
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
 
-a11y test: <img src="readme-images/a11y_image12.png">
+a11y test: 
 
-content: 
+content: <img src="readme-images/a11y_image12.png">
 
-global code: 
+global code: <img src="readme-images/a11y_image13.png">
 
-keyboard:  
+keyboard:  <img src="readme-images/a11y_image14.png">
 
-Images: 
+Images: <img src="readme-images/a11y_image15.png">
 
-Headings: 
+Headings: <img src="readme-images/a11y_image16.png">
 
-Controls: 
+Lists: <img src="readme-images/a11y_image17.png">
 
-forms: 
+Controls: <img src="readme-images/a11y_image18.png">
 
-Appearance: 
+forms: <img src="readme-images/a11y_image19.png">
 
-Animation:
+Appearance: <img src="readme-images/a11y_image20.png">
 
-Color Contrast: 
+Animation: <img src="readme-images/a11y_image21.png">
+Ik heb geen video dus die is voor mij niet van toepassing
 
-Mobile and touch:
+Color Contrast: <img src="readme-images/a11y_image22.png">
+
+Mobile and touch: <img src="readme-images/a11y_image23.png">
 
 </details>
 
