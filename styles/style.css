@@ -59,16 +59,24 @@
   font-style: normal;
 }
 
-/* @keyframes borderAnimation {
+@keyframes borderAnimation {
   0% {
-    border-bottom-left-radius: 30%;
-    border-bottom-right-radius: 30%;
+    transform: translateY(-100%); 
+  }
+  10% {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  50% {
+    border-bottom-left-radius: 3em;
+    border-bottom-right-radius: 3em;
   }
   100% {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    transform: translateY(0%); 
   }
-}  */
+}  
 
 @keyframes verkleinFoto {
   0% {
@@ -87,17 +95,55 @@
   }
 }
 
-@keyframes bubble-rise {
+@keyframes bubbles1 {
   0% {
-    transform: translateY(100vh) scale(0.8);
+    clip-path: circle(0% at 10% 90%);
   }
   50% {
-    transform: translateY(50vh) scale(1);
+    clip-path: circle(15% at 10% 50%);
   }
   100% {
-    transform: translateY(-100vh) scale(1.2);
+    clip-path: circle(0% at 10% 0%);
   }
 }
+
+@keyframes bubbles2 {
+  0% {
+    clip-path: circle(0% at 90% 90%);
+  }
+  50% {
+    clip-path: circle(11% at 88% 60%);
+  }
+  100% {
+    clip-path: circle(0% at 90% 0%);
+  }
+}
+
+@keyframes bubbles3 {
+  0% {
+    clip-path: circle(0% at 70% 100%);
+  }
+  50% {
+    clip-path: circle(15% at 60% 50%);
+  }
+  100% {
+    clip-path: circle(0% at 60% 0%);
+  }
+}
+
+@keyframes bubbles4 {
+  0% {
+    clip-path: circle(0% at 30% 90%);
+  }
+  50% {
+    clip-path: circle(12% at 25% 50%);
+  }
+  100% {
+    clip-path: circle(0% at 20% 0%);
+  }
+}
+
+
 
 /* basic dingetjes */
 
@@ -175,15 +221,6 @@ header section > button img {
   margin-right: 4.5vw;
 } 
 
-/* nav tevoorschijn */
-
-.toonMenu {
-  transform: translateY(0%); 
-  z-index: 2;
-  overflow: scroll;
-  visibility: visible;
-}
-
 /* sluit button & cart */
 
 nav ul {
@@ -206,11 +243,22 @@ nav ul li a img{
   max-width: 11.5vw;
 }
 
+/* nav tevoorschijn */
+
+.toonMenu {
+  /* transform: translateY(0%);  */
+  z-index: 2;
+  overflow: scroll;
+  visibility: visible;
+  animation-name: borderAnimation;
+  animation-duration: 2s;
+}
+
 /* nav */
 nav {
   background-color: var(--main-color);  
-  transform: translateY(-200%); 
-  transition: transform 1s ease-out; 
+  /* transform: translateY(-120%);  */
+  /* transition: transform 1.5s ease-in;  */
   /* animation-name: borderAnimation;  */
   position:fixed;
   left:0;
@@ -442,14 +490,13 @@ main section:nth-of-type(1) img:first-of-type{
   height: 100%;
   width: 100vw;
   object-fit: cover;
-  /* transition: max-height 1s ease-out, width 1s ease-out; */
 }
 
 .scrolled img:first-of-type { 
   object-fit: cover;
   animation-name: verkleinFoto;
   animation-duration: 3s;
-  height: 80vw; 
+  height: 55vw; 
   width: 80vw;
   border-radius: 1em; 
   animation-fill-mode: forwards;
@@ -931,10 +978,74 @@ footer section:last-of-type article {
   margin: 0vw 25vw;
 }
 
-.schools section:nth-of-type(1) img {
-  clip-path: circle(38.0% at 50% 50%);
-  max-height: 100vw;
+.schools section:nth-of-type(1) > img {
+  clip-path: circle(40.0% at 50% 50%); 
+  max-width: 80vw;
+  max-height: 45vh;
   margin-top: 65vw;
+}
+
+.schools section:nth-of-type(1) > div > div:first-of-type img {
+  position: absolute;
+  width: 100vw;
+  height: 45vh;
+  margin-top: 65vw;
+  filter: none;
+  top: 0;
+  left: 0;
+  clip-path: circle(30.0% at 50% 50%);
+  animation-name: bubbles1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; 
+  animation-delay: 1s;
+}
+
+.schools section:nth-of-type(1) > div > div:nth-of-type(2) img {
+  position: absolute;
+  width: 100vw;
+  height: 45vh;
+  margin-top: 65vw;
+  filter: none;
+  top: 0;
+  left: 0;
+  clip-path: circle(30.0% at 50% 50%);
+  animation-name: bubbles2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; 
+  animation-delay: 3s;
+}
+
+.schools section:nth-of-type(1) > div > div:nth-of-type(3) img {
+  position: absolute;
+  width: 100vw;
+  height: 45vh;
+  margin-top: 65vw;
+  filter: none;
+  top: 0;
+  left: 0;
+  clip-path: circle(30.0% at 50% 50%);
+  animation-name: bubbles3;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; 
+}
+
+.schools section:nth-of-type(1) > div > div:nth-of-type(4) img {
+  position: absolute;
+  width: 100vw;
+  height: 45vh;
+  margin-top: 65vw;
+  filter: none;
+  top: 0;
+  left: 0;
+  clip-path: circle(30.0% at 50% 50%);
+  animation-name: bubbles4;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; 
+  animation-delay: 5s;
 }
 
 /* section 2 */
