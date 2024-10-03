@@ -111,7 +111,7 @@ alles werkt goed op mobile versie behalve dat als je een mobiel horizontaal draa
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/breakdownschets.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownschets.jpeg" width="375px" alt="breakdown van de hele pagina">
 
 </details>
 
@@ -205,29 +205,29 @@ alles werkt goed op mobile versie behalve dat als je een mobiel horizontaal draa
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
 
-a11y test: 
+a11y test: <img src="readme-images/a11y_image12.png">
 
-content: <img src="">
+content: 
 
-global code: <img src="">
+global code: 
 
-keyboard: <img src=""> 
+keyboard:  
 
-Images: <img src=""> 
+Images: 
 
-Headings: <img src=""> 
+Headings: 
 
-Controls: <img src=""> 
+Controls: 
 
-forms: <img src=""> 
+forms: 
 
-Appearance: <img src=""> 
+Appearance: 
 
-Animation: <img src=""> 
+Animation:
 
-Color Contrast: <img src=""> 
+Color Contrast: 
 
-Mobile and touch: <img src=""> 
+Mobile and touch:
 
 </details>
 
