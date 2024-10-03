@@ -111,7 +111,7 @@ alles werkt goed op mobile versie behalve dat als je een mobiel horizontaal draa
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="../FED_website/readme-images/breakdownschets.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownschets.png" width="375px" alt="breakdown van de hele pagina">
 
 </details>
 
