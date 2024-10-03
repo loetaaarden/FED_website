@@ -226,7 +226,7 @@ header section > button img {
 /* sluit button & cart */
 
 nav ul {
-  position: sticky;
+  position: sticky; /* ik heb hier chat gpt gevraagd om hoe dit het beste kon doen */
   top: 3.5vw;
   display: flex;
   align-items: center;

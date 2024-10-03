@@ -280,19 +280,27 @@ Mobile and touch: <img src="readme-images/a11y_image23.png">
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/eindproduct-pagina1.png" width="375px" alt="pagina 1">
+  <img src="readme-images/eindproduct-pagina2.png" width="375px" alt="pagina 2">
 
+  De extra's die ik heb gedaan: 
+  - dark mode
+  - animatie eerste foto pagina 1
+  - animatie eerste foto pagina 2
+  - animatie hamburger menu openen
+  - details sluiten wanneer en andere geopend wordt en wanneer het hamburger menu gesloten wordt.
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  ik heb veel geleerd maar wat toch verbazingwekkend toch werkte waren de animatie op de eerste foto's van beide pagina's
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/gelukt-pagina1.jpeg" width="375px" alt="top">
+  <img src="readme-images/gelukt-pagina2.jpeg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  ik heb geprobeerd ook de hamburger menu terug te laten gaan met een animatie want dat was eerst wel zo maar dat lukte niet meer.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/mislukt.jpeg" width="375px" alt="bummer">
 </details>
 
 
@@ -310,6 +318,11 @@ Mobile and touch: <img src="readme-images/a11y_image23.png">
 
   1.  https://angel-rs.github.io/css-color-filter-generator/
   2. https://images.app.goo.gl/rNRYyNspaaYZukJHA
-  3. 
+  3. https://chatgpt.com/c/66faba83-cda8-800f-883e-56eb5d644792 prompt: why does my button not stay sticky ? 
+  4. https://pinetools.com/invert-color
+  5. https://utilitybend.com/blog/animating-clip-paths-on-scroll-with-at-property-in-css/
+  6. https://www.sitepoint.com/style-html-details-element/
+  7. docent & student assistenten: Ivo Nijhuis, Kim Dekker, Thomas Norden, David Bijl
+  8. Klasgenoot Mariska Boelhouwers
 
 </details>
